@@ -1,0 +1,272 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');/* regular-400, medium-500, semibold-600, bold-700 */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html, body{width: 100%; height: 100%;}
+
+*{  margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+li{list-style: none;}
+
+/* header, logo */
+#header {
+    height: 100px; background-color: #fff;
+    
+}
+.logo{
+  justify-content: center;
+}
+.logo img{
+  margin-top: 10px; padding-top: 2px;
+}
+
+/* header fixed */
+#wrap {
+  position: fixed; background-color: #fff;
+  border-bottom: 1.5px solid #8E7D78;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+}
+
+
+
+/* wrapper */
+  .wrapper{
+    width:100%;
+  }
+  .container{
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+    border:1px solid #e1e1e1;
+  }
+  .head{
+    width:100%;
+    height:85px;
+    border-bottom:1px solid #e1e1e1;
+    position:relative;
+  }
+  .logo{
+    text-align:center;
+    font-style:italic;
+    font-weight:800;
+    padding-top:8px;
+  }
+  .logo img {
+    width: 65px;
+    height:65px;
+    object-fit: scale-down cover;
+  }
+  
+  .body{
+    height:400px;
+    position:relative;
+    overflow:hidden;
+  }
+  .content{
+    height:100%;
+    font-size:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .slide-open{
+    position:absolute;
+    top:0;
+    right:0;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+  }
+
+  .burgur{
+  right: 20px;
+  top: 45px;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #8E7D78;
+  }
+  .burgur .top-line{
+  width: 20px;
+  height: 2px;
+  background-color: #8E7D78;
+  bottom: -5px;
+  content: '';
+  position: absolute;
+  right: 0;
+  -webkit-transition:  -webkit-transform .3s;
+  transition: transform .3s;
+  
+  }
+  .burgur .bot-line {
+  width: 20px;
+  height: 2px;
+  background-color: #8E7D78;
+  top: -5px;
+  content: '';
+  position: absolute;
+  right: 0;
+  -webkit-transition:  -webkit-transform .3s;
+  transition: transform .3s;
+  }
+  
+  .burgur.on {
+  width: 0;
+  }
+  .burgur.on .bot-line {
+  -webkit-transform: translateY(5px) rotate(135deg);
+  transform: translateY(5px) rotate(135deg);
+  }
+  .burgur.on .top-line{
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(-5px) rotate(-135deg);
+  }
+
+
+
+
+  /* slide */
+  .slide{
+    width:85%;
+    position:absolute;
+    left:-100%;
+    top:0;
+    right:0;
+    bottom:0;
+
+    -webkit-transition: left .3s;
+    -moz-transition: left .3s;
+    -ms-transition: left .3s;
+    -o-transition: left .3s;
+    transition: left .3s;
+    background-color:#fff;
+  }
+  .slide-title{
+    width:100%;
+    height: 101px;
+    border-bottom: 1px solid #8E7D78;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 25px
+  }
+  .slide.on{
+    left:0;
+    /* menu slide fixed */
+  position: fixed;  
+  border-bottom: 1.5px solid #8E7D78; background-color: #fff;
+  top: 0;
+      /* width: 100% */
+  left: 0;
+  right: 0;
+  }
+
+  .slide ul li{
+    display:inline-block;
+    width:100%;
+    padding:12px;
+    font-family:'Times New Roman';
+    margin-left: 20px;
+  }
+
+  .slide ul li a{
+  text-decoration: none; color: #414141;}
+
+
+  .text {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+
+
+
+/* Visual */
+#visual {position: relative; max-width:1000px; height:auto; margin: 0 auto; margin-top: 100px;}
+
+
+/* New */
+#new{height: 680px; width: 600px; margin: 0 auto; margin-top: 100px; margin-bottom: 100px;}
+#new h3{font-family:'Times New Roman', Times, serif; font-size: 26px; text-align: center; padding-bottom: 5px;}
+#new .new_veiw{font-family:'Times New Roman', Times, serif; font-size: 18px; text-align: center; color: #8E7D78;}
+#new p a{color: #AD4E4E;}
+#new ul li{width: 300px; height: 340px; float: left; margin: 0 auto;}
+#new ul li a{text-decoration: none;}
+#new img{position: relative; float: left; width: 100%;}
+#new li p{font-family:'Pretendard'; font-size: 16px; margin-top: 150px; text-align: center; color: #8E7D78;}
+
+/* Best */
+#best{background-color: #FDF6EE; height: 850px; min-width: 600px;}
+#best h3{font-family:'Times New Roman', Times, serif; font-size: 26px; text-align: center; padding: 50px 50px 0px 50px;}
+#best p a{color: #AD4E4E;}
+#best .view{font-family:'Times New Roman', Times, serif; font-size: 18px; text-align: center; padding-bottom: 40px;}
+
+  #best h2{text-align: center;
+    border-bottom:2px solid #000000; 
+    margin: 5px auto; 
+  }
+  #best h1{text-align: center;
+    border-bottom: 2px solid #AD4E4E; 
+    margin: 15px auto;
+    margin-bottom: 10px;
+}
+#best ul{margin: 0 auto; max-width: 600px;}
+#best ul li{float: left; width: 235px; height: 200px; margin: 30px; padding: 35px;}
+#best ul li a{text-decoration: none;}
+#best img{position: relative; float: left; width: 100%; margin-bottom: 10px;}
+#best p{font-family:'Pretendard'; font-size: 16px; text-align: center; margin-top: 5px; color: #8E7D78;}
+#best .price{font-family:'Pretendard'; font-size: 16px; text-align: center; margin-top: 5px; color: #96cdda;}
+
+  #best h5{text-align: center;
+    border-bottom: 2px solid #AD4E4E; 
+    margin: 15px auto;
+    margin-top: 600px;
+
+  }
+  #best h4{text-align: center;
+    border-bottom:2px solid #000000; 
+    margin-bottom: 1200px;
+    margin: 8px auto;
+  }
+
+
+
+
+/* visual2 */
+#visual2{max-width: 1000px; width: 100%; height:auto; margin: 0 auto; margin-top:80px; margin-bottom: 80px;}
+#visual2 li img{width: 100%; max-width: 2048px; height: auto; margin: 0 auto;}
+
+
+/* Ink Library */
+#inklib{position: relative; max-width:1000px; margin: 0 auto;}
+#inklib img{width: 100%;}
+
+
+/* footer */
+  #footer h4{text-align: center;
+    border-bottom:2px solid #000000; 
+    margin: 8px auto;
+  }
+  #footer h5{text-align: center;
+    border-bottom: 2px solid #AD4E4E; 
+    margin: 10px auto;
+  }
+#footer{margin: 0 auto; height: 540px; min-width: 600px; width: 100%;
+  padding-top: 100px; text-align: center; font-family:'Pretendard'; font-size: 20px;}
+#footer h3{margin-top: 80px; margin-bottom: 50px;}
+#footer p{font-size: 12px; color: #8E7D78; text-align: center; margin-bottom: 10px;}
+#footer ul{ position: relative; display: flex; justify-content: center; margin: 20px; }
+#footer ul li{margin: 5px;}
+#footer ul li a img{width: 35px; padding: 5px;}
+#footer .copyright{padding-bottom: 40px;}
+
+
+
+
